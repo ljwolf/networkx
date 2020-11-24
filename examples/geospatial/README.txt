@@ -49,4 +49,10 @@ relationships between features using the concept of spatial weights.
 These include relationships such as ``Queen``, ``Rook``, ...
 (Levi please add more here with a brief explanation of each).
 
-(Martin please add a brief intro to abstractions used in your examples)
+``momepy`` allows representation of street networks as both primal
+and dual graphs (in a street network analysis sense). The primal approach
+turns intersections into Graph nodes and street segments into edges,
+a format which is used for a majority of morphological studies. The dual 
+approach uses street segments as nodes and intersection topology
+as edges, which allows encoding of angular information (i.e an analysis
+can be weighted by angles between street segments instead of their length).
