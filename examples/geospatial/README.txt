@@ -28,8 +28,10 @@ See the following examples that use PySAL:
 
 `momepy <http://docs.momepy.org/en/stable/>`__ builds on top of
 GeoPandas and PySAL to provide a suite of algorithms focused on urban
-morphology. From a network analysis context, momepy enables you to…
-(Martin please add more here).
+morphology. From a network analysis context, momepy enables you to
+convert your line geometry to ``networkX.MultiGraph`` and back to 
+``GeoDataFrames`` and apply a range of analytical functions aiming at 
+morphological description of (street) network configurations.
 
 See the following examples that use momepy:
 
@@ -48,4 +50,3 @@ These include relationships such as ``Queen``, ``Rook``, ...
 (Levi please add more here with a brief explanation of each).
 
 (Martin please add a brief intro to abstractions used in your examples)
-
