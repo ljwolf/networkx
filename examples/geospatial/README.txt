@@ -37,6 +37,12 @@ See the following examples that use momepy:
 
 * ...
 
+`OSMnx <https://osmnx.readthedocs.io/>`__ provides a set of tools to retrieve, model, project, analyze, and visualize OpenStreetMap street networks (and any other networked infrastructure) as NetworkX MultiDiGraph objects, and convert these MultiDiGraphs to/from Geopandas GeoDataFrames. It can automatically add node/edge attributes for: elevation and grade (using the Google Maps Elevation API), edge travel speed, edge traversal time, and edge bearing. It can also retrieve any other spatial data from OSM (such as building footprints, public parks, schools, transit stops, etc) as Geopandas GeoDataFrames.
+
+See the following examples that use OSMnx:
+
+* ``examples/geospatial/plot_osmnx.py``
+
 Key Concepts
 ~~~~~~~~~~~~
 
@@ -56,3 +62,5 @@ a format which is used for a majority of morphological studies. The dual
 approach uses street segments as nodes and intersection topology
 as edges, which allows encoding of angular information (i.e an analysis
 can be weighted by angles between street segments instead of their length).
+
+``OSMnx`` represents street networks as primal, nonplanar, directed graphs with possible self-loops and parallel edges to model real-world street network form and flow. Nodes represent intersections and dead-ends, and edges represent the street segments linking them. Details of OSMnx's modeling methodology are available at https://doi.org/10.1016/j.compenvurbsys.2017.05.004
